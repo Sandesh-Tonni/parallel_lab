@@ -19,9 +19,28 @@ To implement and execute sequential matrix multiplication and measure its execut
 | Execution Time | 48.008434 seconds |
 | Verification C[0][0] | 4000.00 |
 
-### Files
-- `sequential/matrix_sequential.c` - Source code
-- `sequential/matrix_sequential` - Compiled executable
+---
+
+## Experiment 2: OpenMP Matrix Multiplication
+
+### Objective
+To implement matrix multiplication using OpenMP and measure the execution time using multiple threads.
+
+### Implementation
+- Language: C
+- Compiler: GCC 15.2.0
+- Matrix Size: 4000 × 4000
+- Parallelization: OpenMP
+- Number of Threads: 8
+
+### Result
+
+| Parameter | Result |
+|---|---|
+| Matrix Size | 4000 × 4000 |
+| Number of Threads | 8 |
+| Execution Time | 14.823949 seconds |
+| Verification C[0][0] | 4000.00 |
 
 ### Conclusion
-The sequential matrix multiplication was successfully executed for 4000 × 4000 matrices. The computed verification value C[0][0] was 4000.00.
+The OpenMP implementation successfully performed matrix multiplication using 8 threads. The verification value C[0][0] was 4000.00.
